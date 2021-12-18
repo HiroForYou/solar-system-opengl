@@ -93,6 +93,7 @@ void installLights( glm::mat4 vMatrix ) {
 
 void setupVertices(void) {
 			
+	// para el cubo que servirá como fondo
 	float cubeVertexPositions[108] =
 	{	-1.0f,  1.0f, -1.0f, -1.0f, -1.0f, -1.0f, 1.0f, -1.0f, -1.0f,
 		1.0f, -1.0f, -1.0f, 1.0f,  1.0f, -1.0f, -1.0f,  1.0f, -1.0f,
@@ -108,6 +109,7 @@ void setupVertices(void) {
 		1.0f,  1.0f,  1.0f, -1.0f,  1.0f,  1.0f, -1.0f,  1.0f, -1.0f
 	};
 
+	// Para crear los cuerpos del anillo
 	int k = 0;
 	for(float theta = 0.0; theta <= 360.0; theta += 1.0){
 	      quad_data[k] = 4*cos(toRadians(theta));
