@@ -1,0 +1,1 @@
+g++ main.cpp -lGL -std=c++11 -Wall -lGL -lGLU -lglut -lGLEW -lglfw `pkg-config --cflags --libs opencv4`
